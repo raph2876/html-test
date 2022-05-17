@@ -1,19 +1,51 @@
 <!doctype html>
+
 <html>
+  
   <head>
+    
     <title>
       Raphael Foundation Site <!-- Title -->
     </title>
+
+    <link rel="stylesheet" href="style.css"> <!-- Styles the website -->
+    
   </head>
+  
   <body>
 
+    <header>
+      <!--Top of each page-->
+      <figure>
+        <img src="images/notebook.gif" width="200">
+       </figure>
+        <h1>Digital Media. Creating Websites</h1>
+    </header>
+
      <!-- Navigation bar -->
-    <p><a href="index.html">Home</a></p>
-    <p><a href="page2.html">Structure and presentation</a></p>
-    <p><a href="page3.html">Interactivity</a></p>
+    <nav>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="page2.html">Structure and presentation</a></p>
+      <p><a href="page3.html">Interactivity</a></p>
+    </nav>
 
     <h1>Structure and presentation</h1> <!-- Main heading -->
-
+    
+    <figure class="center wrap">
+      <!-- Image of the HTML logo with a link to its wikipedia page -->
+      <a href="https://en.wikipedia.org/wiki/HTML5" target="blank">
+        <img src="images/html5_logo.png" width="150">
+      </a>
+      <!-- Image of the HTML logo with a link to its wikipedia page -->
+      <a href="https://en.wikipedia.org/wiki/CSS" target="blank">
+        <img src="images/css3_logo.png" width="150">
+      </a>
+      <!-- Caption -->
+      <figcaption>
+        The HTML5 and CSS3 Logos.
+      </figcaption>
+    </figure>
+    
     <p>Because web sites are viewed and shared on many different devices you can't just create a page that looks great on a desktop computer screen and expect it to also look great on your mobile device.</p>
     <p>To make is possible for web sites to work across a range of devices, web pages use two separate tools, also called languages. The first tells your device what to display on screen and the second tells your device how to display it.</p>
     
@@ -22,7 +54,22 @@
     <p>Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are two common tools used two create and present digital media. In the same way that English, Māori and Sign language are the official languages of New Zealand that are used to create traditional media, HTML and CSS are two of the official languages of the Internet used to create web pages and many Apps.</p>
     <p>As with any language, digital or not, they change over time and have "official" versions. The current official HTML version is 5 and CSS is 3.</p>
     <p>HTML describes the structure and meaning of your media. It says, "this part is a heading" or "this part is a paragraph" or "this part is a navigation block". CSS is used for the presentation. It tells your device how to display the media and can tell different devices to display the same media differently.</p>
-    <p>For example, take a look at the LearnCoach web site as it appears on a mobile devices and on a desktop web browser. The information is the same, but using CSS, the presentation is different.</p>
+    <p>For example, take a look at the <a href="https://learncoach.com/" target="_blank">LearnCoach</a> web site as it appears on a mobile devices and on a desktop web browser. The information is the same, but using CSS, the presentation is different.</p>
 
+    <!-- images of learncoach website -->
+    <figure class="center">
+      <img src="images/learncoach_mobile.png" height="400">
+      <img src="images/learncoach_desktop.png" height="400">
+      <figcaption>
+        The <a href="https://learncoach.com/" target="blank">LearnCoach</a> website on a Mobile Device and a Desktop Computer.
+      </figcaption>
+    </figure>
+
+    <!-- Footer -->
+    <footer>
+      <p class="center">© 2019 Raphael.</p>
+    </footer>
+    
   </body>
+  
 </html>

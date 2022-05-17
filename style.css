@@ -1,4 +1,66 @@
-html, body {
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Shadows+Into+Light&display=swap');
+/*Changes main font*/
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*Gives the header a different background color*/
+header {
+  display: flex; /*Displays children of the nav element as flexible boxes*/
+  align-items: center; /*Align child flexble boxes in the vertical center*/
+  background: #0cbe9b;
+}
+
+/*Gives the header a different font*/
+header h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 400%;
+  font-weight: lighter;
+  color: black;
+}
+
+/*Turns the hyperlinks to the other pages into a navigaion bar with a blue background and black borders (or children of the nav element)*/
+nav {
+  background-color: #0a85d8;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  display: flex; /*Displays children of the nav element as flexible boxes*/
+  align-items: center; /*Align child flexble boxes in the vertical center*/
+}
+
+/*aligns navigaion bar to center*/
+nav p {
+  text-align: center;
+  flex-basis: 100px; /*Each paragraph has the same basic width*/
+  flex-grow: 1; /*Allows each paragraph to grow evenly to fill up the parent nav element*/
+}
+
+/*Makes navigation bar text white*/
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Makes navigaton bar text red when you hover over it*/
+nav a:hover {
+  color: red;
+}
+
+/*Makes headings and subheadings look different*/
+h1, h2 {
+  font-family: 'McLaren', cursive;
+  color: #f75c03;
+}
+
+/*Makes stuff with class="center" aligned to the center*/
+.center {
+  text-align: center;
+}
+
+/*Makes stuff with clas="wrap" aligned to the right*/
+.wrap {
+  float: right;
 }
