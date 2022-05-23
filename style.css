@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Shadows+Into+Light&display=swap');
-/*Changes main font*/
+
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif; /*Changes main font*/
+  margin: 0; /*Removes all body margins*/
+  font-size: 120%; 
 }
 
-/*Gives the header a different background color*/
 header {
   display: flex; /*Displays children of the nav element as flexible boxes*/
   align-items: center; /*Align child flexble boxes in the vertical center*/
-  background: #0cbe9b;
+  background: #0cbe9b; /*Gives the header a different background color*/
 }
 
 /*Gives the header a different font*/
@@ -49,10 +50,26 @@ nav a:hover {
   color: red;
 }
 
-/*Makes headings and subheadings look different*/
+footer {
+  background-color: #0a85d8; /*Makes the footer background blue*/
+  position: fixed; /*Fixes the footer to the viewport*/
+  bottom: 0; /*Starts 0 pixels from the bottom of the viewport*/
+  left: 0; /*Starts 0 pixels from the left of the viewport*/
+  width: 100%; /*Sets width to 100% of the viewport*/
+  height: 3em; /*Makes the footer elements 3x larger than its current font size*/
+  border-top: solid black 1px; /*Makes the top border thin and black*/
+}
+
+/*Makes headings and subheadings have a different font and color*/
 h1, h2 {
   font-family: 'McLaren', cursive;
   color: #f75c03;
+}
+
+.main {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 4em; /*Makes the margin larger to allow for the footer*/
 }
 
 /*Makes stuff with class="center" aligned to the center*/
